@@ -1,9 +1,15 @@
 package programs;
 
+
+import java.util.Scanner;
+
 public class Factorial {
 
 	public static void main(String[] args) {
-		int num=5;
+		
+		Scanner s1=new Scanner(System.in);
+		System.out.print("Enter number ");
+		int num=s1.nextInt();
 		int fact=1;
 		
 		for(int i=1;i<=5;i++) {
@@ -12,5 +18,6 @@ public class Factorial {
 		System.out.println("Factorial of given number "+num+"! = "+fact);
 
 	}
+
 
 }
